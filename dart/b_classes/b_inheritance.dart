@@ -26,6 +26,11 @@ class SmallCar extends Car{
   */
   int speed = 3;
 
+  void print_super_speed(){
+    print(super.speed);
+  }
+
+
   // override
   void accelerator(){
     speed+=50;
@@ -44,5 +49,5 @@ void main(){
   SmallCar race = SmallCar();
   race.accelerator();
   print((race as Vehicle).speed);
-  
+
 }
