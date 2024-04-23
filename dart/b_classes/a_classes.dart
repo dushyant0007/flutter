@@ -17,6 +17,22 @@ class Cookie {
     this.size = size;
   }
 
+  // Cookie.zero(){
+  //   shape = ' _ ';
+  //   size = 0;
+  // }
+  // -- OR -- 
+  // Cookie.zero():shape = '_',size = 0{
+  //   print('what a cookie');
+  // }
+  // -- OR -- // constructor forwarding
+  Cookie.zero():this('_',0);
+
+  Cookie.defaultCookie(){
+    this.shape = 'Some Shape';
+    this.size = 99.99;
+  }
+
 
 
   void set_private(int val){
@@ -43,6 +59,11 @@ class Cookie {
 
   set special_set_private(int p){ _private = p;}
 
+  void printAll(){
+    print(shape);
+    print(size);
+  }
+
   static change_greeting(String newGreeting){
     greeting = newGreeting;
   }
@@ -64,5 +85,11 @@ void main(){
   print(Cookie.greeting);
   Cookie.change_greeting("This is new greeting");
   print(Cookie.greeting);
+
+  Cookie df_cookie = new Cookie.defaultCookie();
+
+  Cookie zr_cookie = new Cookie.zero();
+  zr_cookie.printAll();
+
 
 }

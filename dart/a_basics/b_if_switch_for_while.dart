@@ -55,12 +55,24 @@ void main(){
       stdout.write('hello ');
     print('');
 
+    // --------
+
     int i = 100;
     while(i > 0) 
       i--;
+    
+    //---------
 
     do
       i+=1;      
     while(i <= 100);
+
+    //--------
+
+    for(int i in [1,2,3,4])
+      print(i);
+
+
+    
 
 }

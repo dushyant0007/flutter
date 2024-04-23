@@ -1,7 +1,13 @@
 
+// class Vehicle extends object or class Vehicle (bother are same)
 class Vehicle {
   int speed = 10;
   bool isEngineWorking  = false;
+
+  @override
+  String toString(){
+    return "speed : $speed, isEngineWorking: $isEngineWorking";
+  }
 
   void accelerator(){
     speed+=10;
