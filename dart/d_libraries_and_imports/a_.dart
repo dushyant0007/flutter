@@ -2,7 +2,6 @@
 // Libraries can be distributed using packages.
 
 // For built-in libraries, the URI has the special dart: scheme.
-import 'dart:html';
 
 // --------------------------
 
