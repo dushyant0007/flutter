@@ -2,6 +2,7 @@
 import 'dart:io';
 
 String input(){
+  print("Enter the age integer ");
   String? str  = stdin.readLineSync();
 
   final rtn  = str ?? '0';
@@ -82,5 +83,26 @@ void main(){
     }
 
     describe(12.3);
+
+  // fall through in switch
+
+  int a = 11;
+
+  switch(a){
+    case 11:
+    case 12:
+    case 13:
+      print('11 <= a <= 13');
+      break;
+    
+    case 14:
+    case 15:
+    case 16:
+      print('14 <= a <= 16');
+      break;
+
+    default:
+      print(' a <= 10 or a >= 17');
+  }
 
 }
